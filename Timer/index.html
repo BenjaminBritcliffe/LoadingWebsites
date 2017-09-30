@@ -1,0 +1,24 @@
+<html>
+ <head>
+  
+ <script>
+  time = 11
+  function timer(){
+   if(!time<1){
+   time = time - 1
+   result.innerHTML = "please wait for "+time+" seconds"
+   }else{
+    window.clearInterval(update);
+    result.innerHTML = "<h1>Countdown done</h1>"
+   }
+  }
+  update = setInterval("timer()",1000)
+ </script>
+ 
+ </head>
+
+ <body>
+  <div id="result"></div>
+ </body>
+
+ </html>
